@@ -6,6 +6,7 @@ function BookCreate({ onCreate }) {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     onCreate(title);
+    setTitle("");
   };
   return (
     <div className="book-create">
